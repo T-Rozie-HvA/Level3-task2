@@ -42,9 +42,9 @@ class PortalAdapter(private val portals: List<Portal>) :
             itemView.tvTitle.text = portal.title
             itemView.tvUrl.text = portal.url
         }
-    init {
-        itemView.setOnClickListener { onItemClick(portals[adapterPosition]) }
-    }
 
+        init {
+            itemView.setOnClickListener { onItemClick(portals[adapterPosition]) }
+        }
     }
 }
